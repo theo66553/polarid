@@ -1,4 +1,7 @@
 -- // Load
+if not gethui then 
+	gethui = function() return game.Players.LocalPlayer.PlayerGui end; IsStudio = true;
+end
 
 local startupArgs = ({...})[1] or {}
 
